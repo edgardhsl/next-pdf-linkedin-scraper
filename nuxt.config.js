@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     ssr: true,
     app: {
         head: {
-            title: "Nuxt RC 3",
+            title: process.env.WEB_TITLE,
             meta: [
                 { charset: "utf-8" },
                 { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -43,6 +43,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
           webTitle: process.env.WEB_TITLE,
+          brandTitle: process.env.BRAND_TITLE,
         }
       }
 })
