@@ -15,7 +15,7 @@
     <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="menuActive = false">Portfólio</SideItem>
     <SideItem href="#page6" icon="mail" v-on:hash-change="menuActive = false">Contato</SideItem>
   </Side>
-  <main class="px-6 ps">
+  <main class="px-6">
     <div class="top-action">
       <Icon v-if="!menuActive" v-on:click="menuActive = true">menu</Icon>
       <Icon v-if="menuActive" v-on:click="menuActive = false">clear_all</Icon>
