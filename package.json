@@ -1,12 +1,13 @@
 {
     "name": "nuxt-vcard",
     "scripts": {
-        "dev": "nuxt",
+        "dev": "npx nuxi dev",
         "build": "nuxt build",
         "generate": "nuxt generate",
         "start": "nuxt start"
     },
     "dependencies": {
+        "eva-icons": "^1.1.3",
         "nuxt": "^3.2.0"
     },
     "devDependencies": {
@@ -14,8 +15,10 @@
         "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
         "@nuxt/types": "^2.16.0",
         "@nuxt/typescript-build": "^2.1.0",
+        "@nuxtjs/ngrok": "^2.0.0",
         "@nuxtjs/tailwindcss": "^6.4.0",
         "canvas": "^2.11.0",
-        "rollup-plugin-polyfill-node": "^0.12.0"
+        "rollup-plugin-polyfill-node": "^0.12.0",
+        "sass": "^1.58.3"
     }
 }
