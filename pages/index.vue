@@ -10,7 +10,7 @@
       </a>
     </div>
     <Separator></Separator>
-    <SideItem href="#page1" icon="face" v-on:hash-change="menuActive = false">Quem sou eu?</SideItem>
+    <SideItem href="#sobre-mim" icon="face" v-on:hash-change="menuActive = false">Sobre mim</SideItem>
     <SideItem href="#page2" icon="moving" v-on:hash-change="menuActive = false">A Pedagogia Empresarial</SideItem>
     <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="menuActive = false">Portfólio</SideItem>
     <SideItem href="#page6" icon="mail" v-on:hash-change="menuActive = false">Contato</SideItem>
@@ -21,10 +21,10 @@
       <Icon v-if="menuActive" v-on:click="menuActive = false">clear_all</Icon>
     </div>
     <Page id="home">
-      <h1>Home</h1>
+      <Home></Home>
     </Page>
-    <Page id="page1">
-      <h1>Page 1</h1>
+    <Page id="sobre-mim">
+      <h1>Sobre mim</h1>
     </Page>
     <Page id="page2">
       <h1>Page 2</h1>
@@ -63,7 +63,7 @@ export default {
     }
   },
   methods: {
-    notify() {
+    toggle() {
       alert('dasdsad');
     }
   }

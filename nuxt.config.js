@@ -31,7 +31,8 @@ export default defineNuxtConfig({
     },
     components: {
         dirs: [
-            '@/components'
+            '@/components',            
+            '@/pages'
         ]
     },
     css: [

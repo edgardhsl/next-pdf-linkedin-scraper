@@ -1,12 +1,19 @@
 <template lang="">
-    <button type="button" class="button" v-bind:class="(color || 'primary')">    
+    <button type="button" class="button" v-bind:class="(color || 'primary')" v-on:click="onClick()">    
         <slot v-if="$slots.default"></slot>
         <template v-if="!$slots.default">BUTTON</template>
     </button>
 </template>
 <script>
 export default {
-    props: ['label', 'color']
+    props: ['label', 'color', 'href'],
+    methods: {
+        onClick() {
+            if(this.href) {
+                return location.href = this.href;
+            }
+        }
+    },
 }
 </script>
 <style lang="scss">
