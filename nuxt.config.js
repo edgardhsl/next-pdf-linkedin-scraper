@@ -25,6 +25,7 @@ export default defineNuxtConfig({
             },
 
             htmlAttrs: {
+                lang: 'pt-BR',
                 class: 'scroll-smooth'
             }
         },

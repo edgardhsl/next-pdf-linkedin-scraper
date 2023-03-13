@@ -7,7 +7,7 @@
             <p class="text-lg font-semibold text-gray-700">
                 {{ title }}
             </p>
-            <p class="mb-2 text-sm font-medium text-gray-600 text-justify md:text-left">
+            <p class="mb-2 text-sm font-medium text-gray-600">
                 {{ description }}
             </p>
         </div>

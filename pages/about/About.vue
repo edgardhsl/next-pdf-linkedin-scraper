@@ -4,24 +4,24 @@
             <h2 class="w-full p-8 pb-1">Sobre mim</h2>
             <div class="mx-8 bg-blue-500 px-10 h-2 w-1 rounded"></div>
             <div class="px-8 py-4">
-                <p class="text-gray-700 text-base">
+                <p class="text-gray-700 text-base text-justify">
                     Sou graduada em Pedagogia pela Universidade X e atuo na área há X anos. Durante minha formação, aprendi sobre os processos de ensino e aprendizagem, bem como sobre o desenvolvimento humano em suas diferentes fases. Ao longo desses anos de atuação, pude contribuir para a formação de muitos alunos e para a melhoria da qualidade da educação em diferentes contextos. Acredito que a Pedagogia é uma área essencial para o desenvolvimento da sociedade e sinto-me realizada em fazer parte dessa profissão.
                 </p>
             </div>
             <div class="bg-slate-50 md:px-6 pt-4 pb-20">
                 <h3 class="w-full p-8 pb-5">Com o que eu trabalho?</h3>
                 <div class="px-8 flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 md:space-x-7">                    
-                    <AboutCardWork title="Mentoria" description="Mentoria é o processo de orientação e aconselhamento profissional.">
+                    <AboutCardWork title="Mentoria" description="Processo de orientação e aconselhamento profissional." class="basis-1/2">
                         <template #icon>
                             <img src="~/assets/images/mentoring.png" class="w-14" />
                         </template>
                     </AboutCardWork>
-                    <AboutCardWork title="Mentoria" description="Mentoria é o processo de orientação e aconselhamento profissional.">
+                    <AboutCardWork title="Consultoria" description="Assessoria especializada em práticas educacionais para empresas e organizações." class="basis-1/2">
                         <template #icon>
                             <img src="~/assets/images/mentoring.png" class="w-14" />
                         </template>
                     </AboutCardWork>
-                    <AboutCardWork title="Mentoria" description="Mentoria é o processo de orientação e aconselhamento profissional.">
+                    <AboutCardWork title="Avaliação" description="Análise de demandas para planejamento de programas de capacitação." class="basis-1/2">
                         <template #icon>
                             <img src="~/assets/images/mentoring.png" class="w-14" />
                         </template>
