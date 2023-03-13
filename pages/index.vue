@@ -15,7 +15,7 @@
     <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="menuActive = false">Portfólio</SideItem>
     <SideItem href="#page6" icon="mail" v-on:hash-change="menuActive = false">Contato</SideItem>
   </Side>
-  <main class="overflow-hidden px-6">
+  <main class="overflow-hidden px-6" ref="el">
     <div class="top-action">
       <Icon v-if="!menuActive" v-on:click="menuActive = true">menu</Icon>
       <Icon v-if="menuActive" v-on:click="menuActive = false">clear_all</Icon>
@@ -68,13 +68,28 @@ main {
   scroll-behavior: smooth;
 
   .top-action {
-    @apply fixed p-5 w-[calc(100%_-_10rem)] flex justify-end;
+    @apply fixed p-5 w-[calc(100%_-_2rem)] flex justify-end md:hidden;
   }
 }
 </style>
 <script lang="ts">
+import { useSwipe } from '@vueuse/core';
+import { ref } from 'vue';
+
 export default {
+  setup() {    
+    const el = ref(null);
+    const swipe = useSwipe(el, {
+    /*   onSwipe() {
+        if(direction.value === 'RIGHT') toggle(true);
+        else toggle(false);
+      } */
+    });
+
+    return { swipe };
+  },
   mounted() {
+    console.log(this);
   },
   data() {
     return {
@@ -82,8 +97,8 @@ export default {
     }
   },
   methods: {
-    toggle() {
-      alert('dasdsad');
+    toggle(bool: boolean) {
+      this.menuActive = bool ?? !this.menuActive;
     }
   }
 }

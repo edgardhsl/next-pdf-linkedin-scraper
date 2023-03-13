@@ -1,6 +1,6 @@
 <template lang="">
     <div class="flex flex-col md:flex-row flex-1 md:items-center min-w-full md:h-screen space-x-6">
-        <div class="w-full md:w-fit flex md:items-center z-10">
+        <div class="w-full mt-30 md:pt-0 md:w-fit flex md:items-center z-10">
             <div class="h-fit self-center">
                 <h5>—<span class="w-1.5"></span> OLÁ</h5>
                 <h1>Eu sou a <span class="text-blue-500">Stephanie</span></h1>

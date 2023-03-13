@@ -17,6 +17,8 @@
         "@nuxt/typescript-build": "^2.1.0",
         "@nuxtjs/ngrok": "^2.0.0",
         "@nuxtjs/tailwindcss": "^6.4.0",
+        "@vueuse/core": "^9.13.0",
+        "@vueuse/nuxt": "^9.13.0",
         "canvas": "^2.11.0",
         "rollup-plugin-polyfill-node": "^0.12.0",
         "sass": "^1.58.3"

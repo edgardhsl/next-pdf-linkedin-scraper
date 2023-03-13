@@ -22,7 +22,6 @@ export default {
     },
     methods: {
         getActive() {
-            console.log('aaaaaa');
             this.active = (window.location.hash === this.href);
             this.$emit('hash-change');
         }

@@ -9,21 +9,21 @@
                 </p>
             </div>
             <div class="bg-slate-50 md:px-6 pt-4 pb-20">
-                <h3 class="w-full p-8 pb-5">Com o que eu trabalho?</h3>
+                <h4 class="w-full p-8 pb-5">Com o que eu trabalho?</h4>
                 <div class="px-8 flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 md:space-x-7">                    
                     <AboutCardWork title="Mentoria" description="Processo de orientação e aconselhamento profissional." class="basis-1/2">
                         <template #icon>
-                            <img src="~/assets/images/mentoring.png" class="w-14" />
+                            <img src="~/assets/images/video-call.png" class="w-14" />
                         </template>
                     </AboutCardWork>
                     <AboutCardWork title="Consultoria" description="Assessoria especializada em práticas educacionais para empresas e organizações." class="basis-1/2">
                         <template #icon>
-                            <img src="~/assets/images/mentoring.png" class="w-14" />
+                            <img src="~/assets/images/consultant.png" class="w-14" />
                         </template>
                     </AboutCardWork>
                     <AboutCardWork title="Avaliação" description="Análise de demandas para planejamento de programas de capacitação." class="basis-1/2">
                         <template #icon>
-                            <img src="~/assets/images/mentoring.png" class="w-14" />
+                            <img src="~/assets/images/report.png" class="w-14" />
                         </template>
                     </AboutCardWork>
                 </div>
