@@ -8,7 +8,7 @@
         </a>
     </li>
 </template>
-<script>
+<script lang="ts">
 export default {
     props: ['href', 'icon'],
     mounted() {
@@ -22,6 +22,7 @@ export default {
     },
     methods: {
         getActive() {
+            console.log('aaaaaa');
             this.active = (window.location.hash === this.href);
             this.$emit('hash-change');
         }
@@ -48,7 +49,7 @@ export default {
         .icon {
             min-width: 12px;
             min-height: 12pxpx;
-            @apply shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center p-2 ;
+            @apply shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center p-2;
         }
 
         .label {

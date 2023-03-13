@@ -39,9 +39,9 @@ export default defineNuxtConfig({
         "@/resources/css/styles.css",
     ],
     plugins: [
-        ///{ src: '~/plugins/eva-icons/eva-icons.client.ts', mode: 'client' }
+        { src: '~/plugins/active-scroll-listener/active-scroll-listener.client.ts', mode: 'client' }
     ],
-    runtimeConfig: {
+    publicRuntimeConfig: {
         public: {
           webTitle: process.env.WEB_TITLE,
           brandTitle: process.env.BRAND_TITLE,
