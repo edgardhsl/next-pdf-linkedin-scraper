@@ -1,9 +1,9 @@
 <template lang="">
     <a href="#">
-        <div class="relative rounded-lg overflow-hidden h-52">
+        <div class="card">
             <img class="card-img" v-bind:src="img" alt="Imagem da Postagem 3">
-            <div class="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
-            <div class="absolute inset-0 flex justify-center items-center p-8 max-w-full">
+            <div class="card-overlay"></div>
+            <div class="card-content">
                 <div class="text-center max-w-full">
                 <h4 class="text-lg font-bold text-white mb-4">{{title}}</h4>
                 <p class="text-sm text-white line-clamp-3">
@@ -21,7 +21,18 @@ export default {
 }
 </script>
 <style lang="scss">
+.card {
+    @apply relative rounded-lg overflow-hidden h-52 hover:scale-95 transition-all;
     .card-img {
         @apply rounded-lg min-h-full md:max-w-full;
     }
+
+    .card-overlay {
+        @apply absolute inset-0 bg-gray-900 bg-opacity-50;
+    }
+
+    .card-content {
+        @apply absolute inset-0 flex justify-center items-center p-8 max-w-full;
+    }
+}
 </style>
