@@ -9,6 +9,6 @@ export default {
 </script>
 <style lang="scss">
     .page {
-        @apply min-h-screen min-w-full;
+        @apply md:min-h-screen min-w-full;
     }
 </style>

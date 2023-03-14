@@ -33,9 +33,7 @@
 </template>
 <script>
 export default {
-    mounted() {
-        this.$onWheel(() => console.log('atualizado'));
-    }
+    mounted() { }
 }
 </script>
 <style lang="scss">

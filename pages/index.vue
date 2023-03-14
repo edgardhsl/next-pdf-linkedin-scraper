@@ -1,5 +1,5 @@
 <template>
-  <Side :active="menuActive">
+  <Side :active="isOpen">
     <div class="h-19.5">
       <i class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
         sidenav-close="" aria-hidden="true"></i>
@@ -10,15 +10,15 @@
       </a>
     </div>
     <Separator></Separator>
-    <SideItem href="#sobre-mim" icon="face" v-on:hash-change="menuActive = false">Sobre mim</SideItem>
-    <SideItem href="#page2" icon="moving" v-on:hash-change="menuActive = false">A Pedagogia Empresarial</SideItem>
-    <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="menuActive = false">Portfólio</SideItem>
-    <SideItem href="#page6" icon="mail" v-on:hash-change="menuActive = false">Contato</SideItem>
+    <SideItem href="#sobre-mim" icon="face" v-on:hash-change="isOpen = false">Sobre mim</SideItem>
+    <SideItem href="#page2" icon="moving" v-on:hash-change="isOpen = false">A Pedagogia Empresarial</SideItem>
+    <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="isOpen = false">Portfólio</SideItem>
+    <SideItem href="#page6" icon="mail" v-on:hash-change="isOpen = false">Contato</SideItem>
   </Side>
   <main class="overflow-hidden px-6" ref="el">
     <div class="top-action">
-      <Icon v-if="!menuActive" v-on:click="menuActive = true">menu</Icon>
-      <Icon v-if="menuActive" v-on:click="menuActive = false">clear_all</Icon>
+      <Icon v-if="!isOpen" v-on:click="isOpen = true">menu</Icon>
+      <Icon v-if="isOpen" v-on:click="isOpen = false">clear_all</Icon>
     </div>
     <div class="md:container md:mx-auto">
       <Page id="home">
@@ -28,7 +28,7 @@
         <About></About>
       </Page>
       <Page id="page2">
-        <h1>Page 2</h1>
+         <Posts></Posts>
       </Page>
       <Page id="page3">
         <h1>Page 3</h1>
@@ -77,28 +77,19 @@ import { useSwipe } from '@vueuse/core';
 import { ref } from 'vue';
 
 export default {
-  setup() {    
-    const el = ref(null);
-    const swipe = useSwipe(el, {
-    /*   onSwipe() {
-        if(direction.value === 'RIGHT') toggle(true);
-        else toggle(false);
-      } */
-    });
-
-    return { swipe };
+  setup() {
   },
   mounted() {
     console.log(this);
   },
   data() {
     return {
-      menuActive: false,
+      isOpen: false,
     }
   },
   methods: {
     toggle(bool: boolean) {
-      this.menuActive = bool ?? !this.menuActive;
+      this.isOpen = bool ?? !this.isOpen;
     }
   }
 }
