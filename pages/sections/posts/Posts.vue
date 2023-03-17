@@ -2,8 +2,8 @@
     <h2 class="w-full pb-1">Meus artigos...</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">
         <div v-for="( item, index) in posts">
-            <PostsCard :img="`https://picsum.photos/600/300/?blur?id=${index}`" :title="item.titulo"
-                :description="item.descricao"></PostsCard>
+            <SectionsPostsCard :img="`https://picsum.photos/600/300/?blur?id=${index}`" :title="item.titulo"
+                :description="item.descricao"></SectionsPostsCard>
         </div>
     </div>
 </template>

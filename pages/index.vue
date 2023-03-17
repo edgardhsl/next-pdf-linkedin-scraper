@@ -11,7 +11,7 @@
     </div>
     <Separator></Separator>
     <SideItem href="#sobre-mim" icon="face" v-on:hash-change="isOpen = false">Sobre mim</SideItem>
-    <SideItem href="#page2" icon="moving" v-on:hash-change="isOpen = false">A Pedagogia Empresarial</SideItem>
+    <SideItem href="#postagens" icon="moving" v-on:hash-change="isOpen = false">A Pedagogia Empresarial</SideItem>
     <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="isOpen = false">Portfólio</SideItem>
     <SideItem href="#page6" icon="mail" v-on:hash-change="isOpen = false">Contato</SideItem>
   </Side>
@@ -22,13 +22,13 @@
     </div>
     <div class="md:container md:mx-auto">
       <Page id="home">
-        <Home></Home>
+        <SectionsHome></SectionsHome>
       </Page>
       <Page id="sobre-mim">
-        <About></About>
+        <SectionsAbout></SectionsAbout>
       </Page>
-      <Page id="page2">
-         <Posts></Posts>
+      <Page id="postagens">
+         <SectionsPosts></SectionsPosts>
       </Page>
       <Page id="page3">
         <h1>Page 3</h1>
@@ -50,7 +50,7 @@ main {
   &:after {
     content: ' ';
     display: block;
-    position: absolute;
+    position: fixed;
     left: 70px;
     top: 140px;
     width: 100%;
@@ -73,9 +73,6 @@ main {
 }
 </style>
 <script lang="ts">
-import { useSwipe } from '@vueuse/core';
-import { ref } from 'vue';
-
 export default {
   setup() {
   },

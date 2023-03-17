@@ -1,6 +1,6 @@
 <template lang="">
     <div class="flex flex-col md:flex-row flex-1 min-w-full md:h-screen space-x-6">
-        <div class="flex-1 rounded overflow-hidden shadow-sm bg-white mb-10">
+        <div class="flex-1 rounded shadow-sm bg-white mb-10">
             <h2 class="w-full p-8 pb-1">Sobre mim</h2>
             <div class="mx-8 bg-blue-500 px-10 h-2 w-1 rounded"></div>
             <div class="px-8 py-4">
@@ -11,21 +11,21 @@
             <div class="bg-slate-50 md:px-6 pt-4 pb-20">
                 <h4 class="w-full p-8 pb-5">Com o que eu trabalho?</h4>
                 <div class="px-8 flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 md:space-x-7">                    
-                    <AboutCardWork title="Mentoria" description="Processo de orientação e aconselhamento profissional." class="basis-1/2">
+                    <SectionsAboutCardWork title="Mentoria" description="Processo de orientação e aconselhamento profissional." data-aos="fade-up" class="card-work">
                         <template #icon>
                             <img src="~/assets/images/video-call.png" class="w-14" />
                         </template>
-                    </AboutCardWork>
-                    <AboutCardWork title="Consultoria" description="Assessoria especializada em práticas educacionais para empresas e organizações." class="basis-1/2">
+                    </SectionsAboutCardWork>
+                    <SectionsAboutCardWork title="Consultoria" description="Assessoria especializada em práticas educacionais para empresas e organizações." data-aos="fade-up" data-aos-delay="100" class="card-work">
                         <template #icon>
                             <img src="~/assets/images/consultant.png" class="w-14" />
                         </template>
-                    </AboutCardWork>
-                    <AboutCardWork title="Avaliação" description="Análise de demandas para planejamento de programas de capacitação." class="basis-1/2">
+                    </SectionsAboutCardWork>
+                    <SectionsAboutCardWork title="Avaliação" description="Análise de demandas para planejamento de programas de capacitação." data-aos="fade-up" data-aos-delay="200" class="card-work">
                         <template #icon>
                             <img src="~/assets/images/report.png" class="w-14" />
                         </template>
-                    </AboutCardWork>
+                    </SectionsAboutCardWork>
                 </div>
             </div>
         </div>
@@ -37,6 +37,9 @@ export default {
 }
 </script>
 <style lang="scss">
+.card-work {
+    @apply basis-1/2;
+}
 .wiggle {
     animation: float 3s ease-in-out infinite;
 

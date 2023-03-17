@@ -1,6 +1,6 @@
 export default function ({ }, inject: any) {
     const onWheel = (onCallback: Function) => {
-        const OFFSET_TOP = 1000;
+       /*  const OFFSET_TOP = 0;
         const OFFSET_BOTTOM = 300;
 
         const headings = Array.from(document.getElementsByClassName('page')) as HTMLElement[];
@@ -13,10 +13,9 @@ export default function ({ }, inject: any) {
 
         function updateActiveHeading(ha: HTMLElement, index: number = 0, arr: Element[] = []) {
             if (isHeadingInViewport(ha)) {
-                updateHistory(ha.id);
-                
-                if(onCallback) onCallback(); 
-                
+                console.log("dsadsa");
+                updateHistory(ha.id);                
+                if(onCallback) onCallback();                 
                 return true;
             }
         }
@@ -35,7 +34,7 @@ export default function ({ }, inject: any) {
             const location = window.location.toString().split('#')[0];
             history.replaceState(null, '', location + '#' + id);
             window.dispatchEvent(new Event('hashchange'));
-        }
+        } */
         
     }
 

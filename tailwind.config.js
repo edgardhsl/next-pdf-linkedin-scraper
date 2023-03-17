@@ -2,12 +2,17 @@ const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   mode: "jit",
+  safelist: [
+    '!duration-0',
+    '!delay-0',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ],
   content: [
     'components/**/*.vue',
     'layouts/**/*.vue',
     'pages/**/*.vue',
     'plugins/**/*.js',
-    'nuxt.config.js',
+    'nuxt.config.js',    
   ],
   presets: [],
   darkMode: "class",
@@ -1357,6 +1362,7 @@ module.exports = {
 
   plugins: [
     require('@tailwindcss/line-clamp'),
+    require('taos/plugin'),
     plugin(function ({ addComponents, addUtilities }) {
       addUtilities({
         ".transform3d": {

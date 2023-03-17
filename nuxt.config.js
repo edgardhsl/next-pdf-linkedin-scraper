@@ -13,13 +13,21 @@ export default defineNuxtConfig({
                 { hid: "author", name: "author", content: process.env.BRAND_TITLE },
             ],
             link: [
-                { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
+                { rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+                { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/aos@next/dist/aos.css' }
             ],
             script: [
-                /* {
-                    src: "https://unpkg.com/eva-icons",
-                    type: "text/javascript",
-                } */
+                { src: "https://unpkg.com/aos@next/dist/aos.js", type: "text/javascript", body: true },
+                { innerHTML: `
+                document.addEventListener('DOMContentLoaded', (e)=> {                    
+                    console.log("Carregou!");
+                    AOS.init({
+                        disable: function() {
+                            return /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
+                        }
+                    });
+                })
+                `, type: "text/javascript", body: true }
             ],
 
             bodyAttrs: {
@@ -32,6 +40,9 @@ export default defineNuxtConfig({
             }
         },
     },
+    ignore: [
+        '~/pages/sessions/**'
+    ],
     components: {
         dirs: [
             '@/components',            
