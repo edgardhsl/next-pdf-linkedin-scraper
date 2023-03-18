@@ -1,23 +1,28 @@
 <template lang="">
-    <a href="#">
+    <a :href="href || '#'" target="_blank">
         <div class="card">
-            <img class="card-img" v-bind:src="img" alt="Imagem da Postagem 3">
+            <img v-if="img" class="card-img" v-bind:src="img" alt="Imagem da Postagem 3">
             <div class="card-overlay"></div>
             <div class="card-content">
                 <div class="text-center max-w-full">
-                <h4 class="text-lg font-bold text-white mb-4">{{title}}</h4>
+                <h4 class="text-lg font-bold text-white mb-2">{{title}}</h4>
                 <p class="text-sm text-white line-clamp-3">
                     {{description}}
                 </p>
                 </div>
             </div>
-            <span class="absolute text-xs right-2 bottom-2 text-white">Medium por <strong>Stephanie</strong>.</span>
+            <span class="absolute text-xs right-2 bottom-2 text-white">Medium por <strong>{{author}}</strong>.</span>
         </div>
     </a>
 </template>
 <script lang="ts">
 export default {
-    props: ['img', 'title', 'description']
+    props: ['author', 'description', 'href', 'img', 'title'],
+    methods: {
+        imgError() {
+            console.log(this)
+        }
+    },
 }
 </script>
 <style lang="scss">

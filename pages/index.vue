@@ -77,7 +77,6 @@ export default {
   setup() {
   },
   mounted() {
-    console.log(this);
   },
   data() {
     return {
@@ -88,6 +87,6 @@ export default {
     toggle(bool: boolean) {
       this.isOpen = bool ?? !this.isOpen;
     }
-  }
+  },
 }
 </script>

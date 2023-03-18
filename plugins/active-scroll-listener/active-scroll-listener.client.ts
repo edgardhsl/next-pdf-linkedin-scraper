@@ -1,6 +1,6 @@
 export default function ({ }, inject: any) {
     const onWheel = (onCallback: Function) => {
-       /*  const OFFSET_TOP = 0;
+        const OFFSET_TOP = 0;
         const OFFSET_BOTTOM = 300;
 
         const headings = Array.from(document.getElementsByClassName('page')) as HTMLElement[];
@@ -34,7 +34,7 @@ export default function ({ }, inject: any) {
             const location = window.location.toString().split('#')[0];
             history.replaceState(null, '', location + '#' + id);
             window.dispatchEvent(new Event('hashchange'));
-        } */
+        }
         
     }
 

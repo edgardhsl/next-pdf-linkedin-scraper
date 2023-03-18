@@ -18,16 +18,17 @@ export default defineNuxtConfig({
             ],
             script: [
                 { src: "https://unpkg.com/aos@next/dist/aos.js", type: "text/javascript", body: true },
-                { innerHTML: `
-                document.addEventListener('DOMContentLoaded', (e)=> {                    
-                    console.log("Carregou!");
+                {
+                    innerHTML: `
+                document.addEventListener('DOMContentLoaded', (e)=> {        
                     AOS.init({
                         disable: function() {
                             return /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent);
                         }
                     });
                 })
-                `, type: "text/javascript", body: true }
+                `, type: "text/javascript", body: true
+                }
             ],
 
             bodyAttrs: {
@@ -41,11 +42,11 @@ export default defineNuxtConfig({
         },
     },
     ignore: [
-        '~/pages/sessions/**'
+        '~/pages/sections/**'
     ],
     components: {
         dirs: [
-            '@/components',            
+            '@/components',
             '@/pages'
         ]
     },
@@ -57,8 +58,8 @@ export default defineNuxtConfig({
     ],
     publicRuntimeConfig: {
         public: {
-          webTitle: process.env.WEB_TITLE,
-          brandTitle: process.env.BRAND_TITLE,
+            webTitle: process.env.WEB_TITLE,
+            brandTitle: process.env.BRAND_TITLE,
         }
-      }
+    }
 })
