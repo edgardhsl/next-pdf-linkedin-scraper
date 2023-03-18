@@ -54,7 +54,8 @@ export default defineNuxtConfig({
         "@/resources/css/styles.css",
     ],
     plugins: [
-        { src: '~/plugins/active-scroll-listener/active-scroll-listener.client.ts', mode: 'client' }
+        { src: '~/plugins/active-scroll-listener/active-scroll-listener.client.ts', mode: 'client' },
+        { src: '~/plugins/lottie-web/lottie-web.client.ts', mode: 'client' }
     ],
     publicRuntimeConfig: {
         public: {

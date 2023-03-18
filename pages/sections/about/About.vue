@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="flex flex-col md:flex-row flex-1 min-w-full md:h-screen space-x-6">
+    <div class="flex flex-col md:flex-row flex-1 min-w-full space-x-6">
         <div class="flex-1 rounded shadow-sm bg-white mb-10">
             <h2 class="w-full p-8 pb-1">Sobre mim</h2>
             <div class="mx-8 bg-blue-500 px-10 h-2 w-1 rounded"></div>
@@ -28,6 +28,7 @@
                     </SectionsAboutCardWork>
                 </div>
             </div>
+            <SectionsTestimonials></SectionsTestimonials>
         </div>
     </div>
 </template>

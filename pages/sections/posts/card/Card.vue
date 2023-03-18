@@ -17,17 +17,12 @@
 </template>
 <script lang="ts">
 export default {
-    props: ['author', 'description', 'href', 'img', 'title'],
-    methods: {
-        imgError() {
-            console.log(this)
-        }
-    },
+    props: ['author', 'description', 'href', 'img', 'title']
 }
 </script>
 <style lang="scss">
 .card {
-    @apply relative rounded-lg overflow-hidden h-52 hover:scale-95 transition-all;
+    @apply relative rounded-lg overflow-hidden h-64 md:h-52 scale-100 hover:scale-105 transition-all;
     .card-img {
         @apply rounded-lg min-h-full md:max-w-full;
     }
