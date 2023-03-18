@@ -19,7 +19,7 @@ export default {
             container: this.$refs.lottie, // the dom element that will contain the animation
             loop: true,
             autoplay: true,
-            path: '/_nuxt/assets/images/lottie/115241-feedback.json', // the path to the animation json
+            path: new URL('/lottie/115241-feedback.json', import.meta.url).href, // the path to the animation json
         })
     }
 }
