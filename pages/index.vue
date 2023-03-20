@@ -13,12 +13,20 @@
     <SideItem href="#sobre-mim" icon="face" v-on:hash-change="isOpen = false">Sobre mim</SideItem>
     <SideItem href="#postagens" icon="moving" v-on:hash-change="isOpen = false">A Pedagogia Empresarial</SideItem>
     <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="isOpen = false">Portfólio</SideItem>
-    <SideItem href="#page6" icon="mail" v-on:hash-change="isOpen = false">Contato</SideItem>
+    <SideItem href="#contato" icon="mail" v-on:hash-change="isOpen = false">Contato</SideItem>
   </Side>
   <main class="overflow-hidden px-6" ref="el">
+
     <div class="top-action">
-      <Icon v-if="!isOpen" v-on:click="isOpen = true">menu</Icon>
-      <Icon v-if="isOpen" v-on:click="isOpen = false">clear_all</Icon>
+      <button class="button">
+        <div class="icon">
+          <Icon v-if="!isOpen" v-on:click="isOpen = true">menu</Icon>
+          <Icon v-if="isOpen" v-on:click="isOpen = false">clear_all</Icon>
+        </div>
+        <span class="label">
+          <slot></slot>
+        </span>
+      </button>
     </div>
     <div class="md:container md:mx-auto">
       <Page id="home">
@@ -28,22 +36,14 @@
         <SectionsAbout></SectionsAbout>
       </Page>
       <Page id="postagens">
-         <SectionsPosts></SectionsPosts>
+        <SectionsPosts></SectionsPosts>
       </Page>
-      <Page id="page3">
-        <h1>Page 3</h1>
-      </Page>
-      <Page id="page4">
-        <h1>Page 4</h1>
-      </Page>
-      <Page id="page5">
-        <h1>Page 5</h1>
-      </Page>
-      <Page id="page6">
-        <h1>Page 6</h1>
+      <Page id="contato">
+        <SectionsContact></SectionsContact>
       </Page>
     </div>
   </main>
+  <SectionsFooter></SectionsFooter>
 </template>
 <style lang="scss">
 main {
@@ -68,7 +68,17 @@ main {
   scroll-behavior: smooth;
 
   .top-action {
-    @apply fixed p-5 w-[calc(100%_-_2rem)] flex justify-end md:hidden;
+    @apply fixed py-5 w-[calc(100%_-_2rem)] flex justify-end md:hidden;
+
+    .button {
+      @apply text-blue-500 text-2xl py-2.7 text-sm my-0 flex items-center whitespace-nowrap px-4 transition-colors;
+
+      .icon {
+            min-width: 12px;
+            min-height: 12pxpx;
+            @apply shadow-sm mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center p-2;
+        }
+    }
   }
 }
 </style>

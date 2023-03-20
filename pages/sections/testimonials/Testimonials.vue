@@ -6,9 +6,9 @@
         <!-- <img src="~/assets/images/feedback.png" class="h-32 absolute right-10 -top-10 rotate-12"> -->
         <div ref="lottie" class="h-28 md:h-36 absolute -right-10 -top-14 md:right-10 md:-top-12 rotate-12"></div>
         <section class="grid grid-cols-1 gap-8 p-3 md:p-8 lg:grid-cols-2 xl:grid-cols-3">
-            <SectionsTestimonialsCard></SectionsTestimonialsCard>
-            <SectionsTestimonialsCard></SectionsTestimonialsCard>
-            <SectionsTestimonialsCard></SectionsTestimonialsCard>
+            <SectionsTestimonialsCard data-aos="fade-up" data-aos-delay="0"></SectionsTestimonialsCard>
+            <SectionsTestimonialsCard data-aos="fade-up" data-aos-delay="100"></SectionsTestimonialsCard>
+            <SectionsTestimonialsCard data-aos="fade-up" data-aos-delay="200"></SectionsTestimonialsCard>
         </section>
     </div>
 </template>
