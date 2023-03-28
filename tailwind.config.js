@@ -34,8 +34,8 @@ module.exports = {
       "lg-max": { max: "992px" },
       xl: "1200px",
       "xl-max": { max: "1200px" },
-      "2xl": "1320px",
-      "2xl-max": { max: "1320px" },
+      "2xl": "1366px",
+      "2xl-max": { min: "1320px", max: "1366px" },
     },
     colors: ({ colors }) => ({
       inherit: colors.inherit,

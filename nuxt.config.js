@@ -32,12 +32,12 @@ export default defineNuxtConfig({
             ],
 
             bodyAttrs: {
-                class: 'm-0 font-sans antialiased font-normal text-base leading-default bg-gray-50 text-slate-500'
+                class: 'm-0 font-sans antialiased font-normal text-base leading-default bg-gray-50 text-slate-500 dark:bg-gray-900'
             },
 
             htmlAttrs: {
                 lang: 'pt-BR',
-                class: 'scroll-smooth'
+                class: 'scroll-smooth dark'
             }
         },
     },

@@ -1,5 +1,5 @@
 <template>
-    <h2 class="w-full pb-1">Meus artigos...</h2>
+    <h2 class="w-full pb-1 dark:text-white">Meus artigos...</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-4">
         <div v-if="posts" v-for="( item, index) in posts">
             <SectionsPostsCard data-aos="fade-up" :data-aos-delay="50 * (index + 1)"

@@ -1,6 +1,6 @@
 <template>
     <div class="relative">
-        <h4 class="w-full p-3 md:p-8 pb-0 flex">
+        <h4 class="w-full p-3 md:p-8 pb-0 flex dark:text-white">
             Depoimentos e recomendações
         </h4>
         <!-- <img src="~/assets/images/feedback.png" class="h-32 absolute right-10 -top-10 rotate-12"> -->

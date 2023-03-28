@@ -10,25 +10,25 @@
       </a>
     </div>
     <Separator></Separator>
-    <SideItem href="#sobre-mim" icon="face" v-on:hash-change="isOpen = false">Sobre mim</SideItem>
-    <SideItem href="#postagens" icon="moving" v-on:hash-change="isOpen = false">A Pedagogia Empresarial</SideItem>
-    <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="isOpen = false">Portfólio</SideItem>
-    <SideItem href="#contato" icon="mail" v-on:hash-change="isOpen = false">Contato</SideItem>
+    <SideItem href="#sobre-mim" icon="face" v-on:hash-change="toggle(false)">Sobre mim</SideItem>
+    <SideItem href="#postagens" icon="moving" v-on:hash-change="toggle(false)">A Pedagogia Empresarial</SideItem>
+    <SideItem href="#page3" icon="collections_bookmark" v-on:hash-change="toggle(false)">Portfólio</SideItem>
+    <SideItem href="#contato" icon="mail" v-on:hash-change="toggle(false)">Contato</SideItem>
   </Side>
   <main class="overflow-hidden px-6" ref="el">
 
     <div class="top-action">
       <button class="button">
         <div class="icon">
-          <Icon v-if="!isOpen" v-on:click="isOpen = true">menu</Icon>
-          <Icon v-if="isOpen" v-on:click="isOpen = false">clear_all</Icon>
+          <Icon v-if="!isOpen" v-on:click="toggle(true)">menu</Icon>
+          <Icon v-if="isOpen" v-on:click="toggle(false)">clear_all</Icon>
         </div>
         <span class="label">
           <slot></slot>
         </span>
       </button>
     </div>
-    <div class="md:container md:mx-auto">
+    <div class="2xl:container md:mx-auto">
       <Page id="home">
         <SectionsHome></SectionsHome>
       </Page>

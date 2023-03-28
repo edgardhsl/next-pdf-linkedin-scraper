@@ -1,15 +1,15 @@
 <template lang="">
     <div class="flex flex-col md:flex-row flex-1 min-w-full space-x-6">
-        <div class="flex-1 rounded shadow-sm bg-white mb-10">
-            <h2 class="w-full p-8 pb-1">Sobre mim</h2>
+        <div class="flex-1 rounded shadow-sm bg-white dark:bg-gray-800 mb-10">
+            <h2 class="w-full p-8 pb-1 dark:text-white">Sobre mim</h2>
             <div class="mx-8 bg-blue-500 px-10 h-2 w-1 rounded"></div>
             <div class="px-8 py-4">
-                <p class="text-gray-700 text-base text-justify">
+                <p class="text-gray-700 dark:text-gray-300 text-base text-justify">
                     Sou formada em Pedagogia e sou pós-graduada em Administração da Educação com Ênfase em Pedagogia Empresarial, Gestão Escolar e Neuropsicopedagogia. Durante minha formação, aprendi sobre os processos de ensino e aprendizagem, bem como sobre o desenvolvimento humano em suas diferentes fases. Ao longo desses anos de atuação, pude contribuir para a formação de muitos alunos e para a melhoria da qualidade da educação em diferentes contextos. Sou apaixonada pelo desenvolvimento humano, viso o crescimento de empresas e de pessoas.
                 </p>
             </div>
-            <div class="bg-slate-50 md:px-6 pt-4 pb-20">
-                <h4 class="w-full p-8 pb-5">Com o que eu trabalho?</h4>
+            <div class="bg-slate-50 dark:bg-gray-900 dark:border-x-2 dark:border-gray-800 md:px-6 pt-4 pb-20">
+                <h4 class="w-full p-8 pb-5 dark:text-white">Com o que eu trabalho?</h4>
                 <div class="px-8 flex flex-col md:flex-row justify-between space-y-5 md:space-y-0 md:space-x-7">                    
                     <SectionsAboutCardWork title="Mentoria" description="Processo de orientação e aconselhamento profissional." data-aos="fade-up" class="card-work">
                         <template #icon>

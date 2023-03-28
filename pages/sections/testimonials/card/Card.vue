@@ -1,5 +1,5 @@
 <template>
-    <div class="p-8 border rounded-lg dark:border-gray-700 bg-white/50 z-10">
+    <div class="p-8 border rounded-lg dark:border-gray-800 bg-white/50 z-10 dark:bg-gray-900">
         <p class="text-sm leading-loose text-gray-600 dark:text-gray-400">
             “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
             tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
