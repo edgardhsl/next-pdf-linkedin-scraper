@@ -34,7 +34,7 @@ export default {
 
     &.active {
         .anchor {
-            @apply shadow-soft-xl rounded-lg bg-white dark:text-white;
+            @apply shadow-soft-xl bg-white dark:text-white;
 
             .icon {
                 @apply bg-gradient-to-tl from-blue-700 to-blue-400 shadow-soft-2xl text-white;
@@ -43,7 +43,7 @@ export default {
     }
 
     .anchor {
-        @apply py-2.7 text-sm my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors  dark:bg-gray-900;
+        @apply py-2.7 rounded-lg text-sm my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors  dark:bg-gray-900;
 
         .icon {
             min-width: 12px;
