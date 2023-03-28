@@ -71,12 +71,12 @@ main {
     @apply z-20 fixed py-5 w-[calc(100%_-_2rem)] flex justify-end md:hidden;
   
     .button {
-      @apply dark:bg-gray-800 text-blue-500 text-2xl py-2.7 text-sm my-0 flex items-center whitespace-nowrap px-4 transition-colors;
+      @apply text-blue-500 text-2xl py-2.7 text-sm my-0 flex items-center whitespace-nowrap px-4 transition-colors;
 
       .icon {
             min-width: 12px;
             min-height: 12pxpx;
-            @apply shadow-sm mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center text-center p-2;
+            @apply shadow-sm mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white dark:bg-gray-800 bg-center text-center p-2;
         }
     }
   }
