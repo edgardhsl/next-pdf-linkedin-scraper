@@ -10,8 +10,8 @@
                 <Button color="info" :href="'#sobre-mim'">Visualizar CV</Button>
             </div>
         </div>
-        <div class="-translate-x-24 -translate-y-20 grow relative h-90 md:h-5/6 scale-[0.4] md:scale-1 transform-gpu md:transform-none z-9">
-            <span class="wiggle absolute top-80 2xl-max:top-80 2xl-max:right-80 rounded-full bg-white dark:bg-gray-800 p-6 z-10">
+        <div class="-translate-x-24 -translate-y-20 2xl-max:mt-28 grow relative h-90 md:h-5/6 scale-[0.4] md:scale-1 transform-gpu md:transform-none z-9">
+            <span class="wiggle absolute top-80 2xl-max:top-80 2xl-max:right-82 rounded-full bg-white dark:bg-gray-800 p-6 z-10">
                 <span class="text-8xl 2xl-max:text-4xl">🚀</span>
             </span>
             <span class="wiggle delay-500 shadow-soft-xl absolute top-32 left-36 2xl-max:top-44 2xl-max:left-16 rounded-full bg-white dark:bg-gray-800 p-6 z-10">
