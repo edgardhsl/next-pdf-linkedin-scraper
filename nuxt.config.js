@@ -57,10 +57,10 @@ export default defineNuxtConfig({
         { src: '~/plugins/active-scroll-listener/active-scroll-listener.client.ts', mode: 'client' },
         { src: '~/plugins/lottie-web/lottie-web.client.ts', mode: 'client' }
     ],
-    publicRuntimeConfig: {
-        public: {
+    runtimeConfig: {
+        public: {            
             webTitle: process.env.WEB_TITLE,
             brandTitle: process.env.BRAND_TITLE,
         }
-    }
+    },
 })

@@ -48,7 +48,7 @@ export default {
         .icon {
             min-width: 12px;
             min-height: 12pxpx;
-            @apply shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white bg-center stroke-0 text-center p-2;
+            @apply shadow-soft-2xl mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-white dark:bg-slate-500 dark:text-gray-200 bg-center stroke-0 text-center p-2;
         }
 
         .label {

@@ -1,31 +1,31 @@
 <template>
     <!-- Foooter -->
-    <section class="bg-white dark:bg-transparent">
+    <section class="bg-white dark:text-gray-500 dark:bg-transparent">
         <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
             <nav class="flex flex-wrap justify-center -mx-5 -my-2">
                 <div class="px-5 py-2">
-                    <a href="#sobre-mim" class="text-sm leading-6 hover:text-gray-900">
+                    <a href="#sobre-mim" class="text-sm leading-6 hover:text-gray-900 dark:hover:text-white">
                         Sobre mim
                     </a>
                 </div>
                 <div class="px-5 py-2">
-                    <a href="#" class="text-sm leading-6 hover:text-gray-900">
+                    <a href="#postagens" class="text-sm leading-6 hover:text-gray-900 dark:hover:text-white">
                         Blog
                     </a>
                 </div>
                 <div class="px-5 py-2">
-                    <a href="#" class="text-sm leading-6 hover:text-gray-900">
+                    <a href="#depoimentos" class="text-sm leading-6 hover:text-gray-900 dark:hover:text-white">
                         Depoimentos
                     </a>
                 </div>
                 <div class="px-5 py-2">
-                    <a href="#" class="text-sm leading-6 hover:text-gray-900">
+                    <a href="#contato" class="text-sm leading-6 hover:text-gray-900 dark:hover:text-white">
                         Contato
                     </a>
                 </div>
             </nav>
             <div class="flex justify-center mt-8 space-x-6">
-                <a href="#" class="hover:text-gray-500">
+                <a href="#" class="hover:text-gray-500 dark:hover:text-white">
                     <span class="sr-only">Facebook</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -33,7 +33,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="#" class="hover:text-gray-500">
+                <a href="https://instagram.com/pedempresarial" class="hover:text-gray-500 dark:hover:text-white" target="_blank">
                     <span class="sr-only">Instagram</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -41,7 +41,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="#" class="hover:text-gray-500">
+                <a href="#" class="hover:text-gray-500 dark:hover:text-white">
                     <span class="sr-only">Twitter</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                         <path
@@ -49,7 +49,7 @@
                         </path>
                     </svg>
                 </a>
-                <a href="#" class="hover:text-gray-500">
+                <a href="#" class="hover:text-gray-500 dark:hover:text-white">
                     <span class="sr-only">GitHub</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -57,7 +57,7 @@
                             clip-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="#" class="hover:text-gray-500">
+                <a href="#" class="hover:text-gray-500 dark:hover:text-white">
                     <span class="sr-only">Dribbble</span>
                     <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
                         <path fill-rule="evenodd"
@@ -67,7 +67,7 @@
                 </a>
             </div>
             <p class="mt-8 text-sm leading-6 text-center">
-                © 2023 <b>PedEmpresarial</b>, Todos os direitos reservados. Powered by: <b><a href="https://www.codsigner.com.br/">codsigner.com.br</a></b>
+                © {{ new Date().getFullYear() }} <b>{{ $config.brandTitle }}</b>, Todos os direitos reservados. Feito com 💙 pela <b><a href="https://www.codsigner.com.br/" target="_blank">codsigner.com.br</a></b>
             </p>
         </div>
     </section>
